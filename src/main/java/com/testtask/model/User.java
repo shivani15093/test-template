@@ -21,8 +21,8 @@ public class User {
     @Column(name = "lastName")
     @NotEmpty(message = "Please provide a last name")
     private String lastName;
-    private String userName;
 
+    @Id
     @Column(name = "email", nullable = false, unique = true)
     @Email(message = "Please provide a valid e-mail Id")
     @NotEmpty(message = "Please provide an e-mail Id")
